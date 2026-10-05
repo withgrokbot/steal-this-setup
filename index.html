@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Steal this setup</title>
-<meta name="description" content="Copy-paste prompts for your own Grok Bot. Day 1: find the cheapest nonstop flight.">
+<meta name="description" content="Copy-paste prompts for your own Grok Bot. Day 2: top-rated spots with 1,000+ reviews. Day 1: cheapest nonstop flight.">
 <style>
   :root { --bg:#0B0C0F; --panel:#16181E; --bubble:#20232B; --mint:#36F1CD; --white:#FFFFFF; --muted:#969EAA; }
   * { box-sizing:border-box; }
@@ -12,7 +12,7 @@
   main { max-width:640px; margin:0 auto; padding:32px 20px 48px; }
   h1 { font-size:2rem; margin:0 0 4px; }
   .sub { color:var(--muted); margin:0 0 28px; }
-  .card { background:var(--panel); border-radius:16px; padding:22px; }
+  .card { margin-bottom:20px; background:var(--panel); border-radius:16px; padding:22px; }
   .tag { display:inline-block; background:var(--mint); color:var(--bg); font-weight:700; font-size:.8rem; padding:3px 12px; border-radius:999px; }
   .result { font-size:1.35rem; font-weight:700; margin:14px 0 2px; }
   .result b { color:var(--mint); }
@@ -29,6 +29,22 @@
 <main>
   <h1>Steal this setup</h1>
   <p class="sub">Real Grok Bot runs you can copy. New one each day.</p>
+
+  <section class="card" id="day-2">
+    <span class="tag">Day 2</span>
+    <p class="result">Best-rated deep dish in Chicago with 1,000+ reviews: <b>Ranalli's, 4.8</b></p>
+    <p class="note">Ranalli's Pizza Bar - West Loop 4.8 (2,564 reviews), Gino's East 4.7 (20,955), Giordano's 4.6 (13,349). A Grok Bot found them on Google Maps and skipped a 4.8 with only 969 reviews.</p>
+
+    <div class="prompt" id="p2">Open Google Maps, search [food] in [city], and give me the top 3 by star rating that have at least 1,000 reviews: name, rating, review count.</div>
+    <button type="button" data-copy="p2">Copy prompt</button>
+
+    <h2>How to use it</h2>
+    <ol>
+      <li>Copy the prompt.</li>
+      <li>Swap in the food and city you want in the [brackets].</li>
+      <li>Paste it into your Grok Bot and let it go.</li>
+    </ol>
+  </section>
 
   <section class="card" id="day-1">
     <span class="tag">Day 1</span>
